@@ -7,14 +7,14 @@ class poolpuzzleone {
       System.out.print(" ");
     }
       System.out.print("n");
-    if ( x > 1 ) {
+    if ( x > 3 ) {
       System.out.print(" oyster");
       x = x + 2;
     }
     if ( x == 1 ) {
       System.out.print("oise");
     }
-    if ( x > 3 ) {
+    if ( x > 2 ) {
       System.out.print("annoys");
     }
     System.out.println("");
