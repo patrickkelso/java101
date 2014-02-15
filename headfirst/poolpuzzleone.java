@@ -12,10 +12,10 @@ class poolpuzzleone {
       x = x + 1;
     }
     if ( x == 1 ) {
-      System.out.print("oise")
+      System.out.print("oise");
     }
     if ( x > 3 ) {
-      System.out.print("annoys")
+      System.out.print("annoys");
     }
     System.out.println("");
     x = x + 2;
