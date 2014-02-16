@@ -8,15 +8,16 @@ class DrumKit {
     System.out.println("ding ding da-ding");
   }
 }  
+
 class DrumKitTestDrive {
   public static void main(String [] args) {
-  DrumKit d = new DrumKit();
-  d.playsnare();
-  d.snare = false;
-  d.playtophat();
-
-  if (d.snare == true ) {
+    DrumKit d = new DrumKit();
     d.playsnare();
+//    d.snare = false;
+    d.playtophat();
+
+//    if (d.snare == true ) {
+//      d.playsnare();
+//    }
   }
- }
 } 
