@@ -11,10 +11,12 @@ class DrumKit {
 class DrumKitTestDrive {
   public static void main(String [] args) {
   DrumKit d = new DrumKit();
+  d.playsnare();
+  d.snare = false;
+  d.playtophat();
+
   if (d.snare == true ) {
     d.playsnare();
   }
-  d.snare = false;
-  d.playtophat();
-  }
+ }
 } 
