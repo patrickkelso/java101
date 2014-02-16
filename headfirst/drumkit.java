@@ -10,7 +10,7 @@ class DrumKit {
 }  
 class DrumKitTestDrive {
   public static void main(String [] args) {
-  Drumkit d = new DrumKit();
+  DrumKit d = new DrumKit();
   if (d.snare == true ) {
     d.playsnare();
   }
