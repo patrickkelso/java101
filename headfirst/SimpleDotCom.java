@@ -18,7 +18,7 @@ public class SimpleDotCom {
       }
     }
 
-  if (numOfHits === locationCells.length) (
+  if (numOfHits == locationCells.length) (
     return result;
   )
 }
