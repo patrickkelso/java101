@@ -16,3 +16,8 @@ Concepts
       - double 64b real
       - char  16 bit unicode/ascii
   -
+An object is a collection of data fields, and the methods to act on that data.
+
+Objects are created from classed via the 'new' operator.
+
+herbie = new Car();
