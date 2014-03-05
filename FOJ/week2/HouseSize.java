@@ -5,13 +5,13 @@ public class HouseSize {
 
     Scanner keyboard = new Scanner(System.in);
 
-    System.out.print("What is the house length");
+    System.out.print("What is the house length? ");
     int houselength = keyboard.nextInt();
-    System.out.print("What is the house width");
+    System.out.print("What is the house width? ");
     int housewidth = keyboard.nextInt();
-    System.out.print("What is the house height");
+    System.out.print("What is the house height? ");
     int househeight = keyboard.nextInt();
-    System.out.print("What is the roof height");
+    System.out.print("What is the roof height? ");
     double roofheight = keyboard.nextDouble();
     int housevolume = houselength * housewidth * househeight;
     double roofvolume = .5 * houselength * housewidth * roofheight;
