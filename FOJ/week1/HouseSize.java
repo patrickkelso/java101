@@ -4,7 +4,9 @@ public class HouseSize {
     int housewidth = 5;
     int househeight = 3;
     double roofheight = 2.5;
-    int housesize = houselength * housewidth * househeight;
-    System.out.println("The house size is " + housesize + "m cubed");
+    int housevolume = houselength * housewidth * househeight;
+    double roofvolume = .5 * houselength * housewidth * roofheight;
+    double totalvolume = housevolume + roofvolume;
+    System.out.println("The house size is " + totalvolume + "m cubed");
  }
 }
