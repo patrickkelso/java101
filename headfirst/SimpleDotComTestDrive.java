@@ -10,11 +10,11 @@ public class SimpleDotComTestDrive {
     String result = dot.checkYourself(userGuess);
     String testResult = "failed";
 
-    if (result.equals("hit") ) {
-      testResult = "passed";
-    }
+//    if (result.equals("hit") ) {
+//      testResult = "passed";
+//    }
 
-    System.out.println(testResult);
+//    System.out.println(testResult);
 
   }
 }
