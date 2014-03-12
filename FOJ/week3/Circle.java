@@ -19,11 +19,11 @@ public class Circle
 
   public double getArea()
   {
-    return 3.1415 * this.radius * this.radius;
+    return Math.PI * this.radius * this.radius;
   }
 
   public double getCircumference()
   {
-    return 3.1415 * this.radius * 2;
+    return Math.PI * this.radius * 2;
   }
 }
