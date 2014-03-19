@@ -6,7 +6,8 @@ class Selection {
     teenager(14);
     teenager(11);
     showGrade(77);
-    smallest(4,7,5);
+    smallest(14,7,15);
+    counter();
   }
   public static void posNeg(int number){
     if (number < 0)
@@ -48,12 +49,19 @@ class Selection {
   public static void smallest(int a,int b,int c){
     if (a < b && a < c)
       System.out.println(a + " is the smallest");
-    else if (b < a && b < c)
+    else if (b < c)
       System.out.println(b + " is the smallest");
     else
       System.out.println(c + " is the smallest");
 
 
+  }
+  public static void counter(){
+    int i = 1;
+    while (i <=5 ){
+      System.out.println(i);
+      i++;
+    }
   }
 
 }
