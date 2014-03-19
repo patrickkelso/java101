@@ -29,9 +29,13 @@ class Iteration {
   }
 
   public static void sum(int max){
-    for (int i = 1; i <=max; i++)
-      System.out.print(i+=i);
-    System.out.println("");
+    int x = 0;
+    int i = 0;
+
+    while (i <= max) {
+      x += i;
+    }
+    System.out.println(x);
   }
 
 }
