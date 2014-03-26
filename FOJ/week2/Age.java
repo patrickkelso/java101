@@ -5,7 +5,7 @@ public class Age {
     Scanner keyboard = new Scanner(System.in);
     System.out.print("Please enter your age: ");
     int age = keyboard.nextInt();
-    keyboard.nextLine();
+    keyboard.nextLine();OC
     System.out.print("Please enter your name: ");
     String name = keyboard.nextLine();
     System.out.println("Hello " + name + " you are " + age + " years old.");

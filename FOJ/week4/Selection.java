@@ -47,9 +47,9 @@ class Selection {
   }
 
   public static void smallest(int a,int b,int c){
-    if (a < b && a < c)
+    if (a <= b && a <= c)
       System.out.println(a + " is the smallest");
-    else if (b < c)
+    else if (b <= c)
       System.out.println(b + " is the smallest");
     else
       System.out.println(c + " is the smallest");

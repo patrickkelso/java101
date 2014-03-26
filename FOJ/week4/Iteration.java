@@ -6,6 +6,7 @@ class Iteration {
   nstars(15);
   sum(12);
   atob(4,9);
+  buyChips();
   }
 
   public static void ten(){
@@ -19,7 +20,7 @@ class Iteration {
       if (i < 25)
     System.out.print(", ");
     }
-    System.out.println("");
+    System.out.println();
   }
 
   public static void nstars(int numstars){
@@ -49,6 +50,24 @@ class Iteration {
       i++;
     }
     System.out.println(x);
+  }
+
+  public static void buyChips(){
+    VendingMachine mach1 = new VendingMachine();
+    do {
+    mach1.insertCoin();
+    }
+    while (!mach1.chipsReleased()); 
+    Chips chips = mach1.getChips();
+    System.out.println("I got the chips: " + chips);
+    
+  }
+
+  public static int fac(int n) {
+    if (n == 0)
+        return 1;
+    else
+      return n * fac(n - 1);
   }
 
 }
