@@ -5,6 +5,7 @@ class Iteration {
   odd();
   nstars(15);
   sum(12);
+  atob(4,9);
   }
 
   public static void ten(){
@@ -30,10 +31,22 @@ class Iteration {
 
   public static void sum(int max){
     int x = 0;
-    int i = 0;
+    int i = 1;
 
     while (i <= max) {
-      x += i;
+      x =  x + i;
+      i++;
+    }
+    System.out.println(x);
+  }
+
+  public static void atob(int min,int max){
+    int x = 0;
+    int i = min;
+
+    while (i <= max) {
+      x =  x + i;
+      i++;
     }
     System.out.println(x);
   }
