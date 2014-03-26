@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.params=width\ height
+comment0.target=Rectangle(int,\ int)
+comment1.params=
+comment1.target=int\ getArea()
+comment2.params=width
+comment2.target=void\ setWidth(int)
+comment3.params=
+comment3.target=int\ getWidth()
+comment4.params=height
+comment4.target=void\ setHeight(int)
+comment5.params=
+comment5.target=int\ getHeight()
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7
