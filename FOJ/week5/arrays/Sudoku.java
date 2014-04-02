@@ -18,10 +18,12 @@ public class Sudoku
     {
         // If you use an array here, you can also easily use an array loop.
         regs = new Group[4];
-        regs[0] = new Group();
-        regs[1] = new Group();
-        regs[2] = new Group();
-        regs[3] = new Group();
+        for (int i = 0; i < regs.length; i++)
+          regs[i] = new Group();
+    //    regs[0] = new Group();
+    //    regs[1] = new Group();
+    //    regs[2] = new Group();
+    //    regs[3] = new Group();
 
         // You can use arrays here, but don't bother using a loop - it is too difficult.
         rows = new Group[4];
@@ -47,14 +49,6 @@ public class Sudoku
     private Group getRegion(int regionNumber)
     {
       return regs[regionNumber-1];
-    //    switch (regionNumber)
-    //    {
-    //        case 1: return regs[0];
-    //        case 2: return regs[1];
-    //        case 3: return regs[2];
-    //        case 4: return regs[3];
-    //    }
-    //    return null;
     }
 
     /**
