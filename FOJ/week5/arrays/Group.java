@@ -1,6 +1,6 @@
 public class Group
 {
-    private Cell c1,c2,c3,c4;
+    private Cell[] cells;
 
     public Group()
     {
@@ -12,12 +12,12 @@ public class Group
         this(g1.getCell(pos1), g1.getCell(pos2), g2.getCell(pos1), g2.getCell(pos2));
     }
 
-    public Group(Cell c1, Cell c2, Cell c3, Cell c4)
+    public Group(Cell cells[0], Cell cells[1], Cell cells[2], Cell cells[3])
     {
-        this.c1 = c1;
-        this.c2 = c2;
-        this.c3 = c3;
-        this.c4 = c4;
+      cells[0] = c1;
+      cells[1] = c2;
+      cells[2] = c3;
+      cells[3] = c4;
     }
 
     public void enterNumber(int cellPos, int number, boolean lock)
@@ -28,32 +28,25 @@ public class Group
 
     public Cell getCell(int cellPos)
     {
-        switch (cellPos)
-        {
-            case 1: return c1;
-            case 2: return c2;
-            case 3: return c3;
-            case 4: return c4;
-        }
-        return null;
+      return cells[cellPos-1];
     }
 
     public boolean isSolved()
     {
-        return c1.getNumber() + c2.getNumber() + c3.getNumber() + c4.getNumber() == 1+2+3+4;
+        return cells[0].getNumber() + cells[1].getNumber() + cells[2].getNumber() + cells[3].getNumber() == 1+2+3+4;
     }
 
     public void print()
     {
-        c1.print();
-        c2.print();
-        c3.print();
-        c4.print();
+        cells[0].print();
+        cells[1].print();
+        cells[2].print();
+        cells[3].print();
         System.out.println();
     }
     
     public String toString()
     {
-        return "\n{" + c1 + "," + c2 + "," + c3 + "," + c4 + "}";
+        return "\n{" + cells[0] + "," + cells[1] + "," + cells[2] + "," + cells[3] + "}";
     }
 }

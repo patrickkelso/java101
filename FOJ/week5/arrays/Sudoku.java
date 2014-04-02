@@ -23,10 +23,8 @@ public class Sudoku
 
         // You can use arrays here, but don't bother using a loop - it is too difficult.
         rows = new Group[4];
-        rows[0] = new Group(regs[0], regs[1], 1, 2);
-        rows[1] = new Group(regs[0], regs[1], 3, 4);
-        rows[2] = new Group(regs[2], regs[3], 1, 2);
-        rows[3] = new Group(regs[2], regs[3], 3, 4);
+        for (int i = 0; i < rows.length; i++)
+          rows[i] = new Group(regs[i/2*2], regs[i/2*2 + 1], (i%2)*2+1, (i%2)*2+2);
 
         // You can use arrays here, but don't bother using a loop.
         cols = new Group[4];
@@ -67,6 +65,3 @@ public class Sudoku
         System.out.println();
     }
 }
-//        return regs[0].isSolved() && regs[1].isSolved() && regs[2].isSolved() && regs[3].isSolved()
-//            && rows[0].isSolved() && rows[1].isSolved() && rows[2].isSolved() && rows[3].isSolved()
-//            && cols[0].isSolved() && cols[1].isSolved() && cols[2].isSolved() && cols[3].isSolved();
