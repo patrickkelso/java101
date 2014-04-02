@@ -20,10 +20,6 @@ public class Sudoku
         regs = new Group[4];
         for (int i = 0; i < regs.length; i++)
           regs[i] = new Group();
-    //    regs[0] = new Group();
-    //    regs[1] = new Group();
-    //    regs[2] = new Group();
-    //    regs[3] = new Group();
 
         // You can use arrays here, but don't bother using a loop - it is too difficult.
         rows = new Group[4];
@@ -65,10 +61,8 @@ public class Sudoku
     public void print()
     {
         System.out.println();
-        rows[0].print();
-        rows[1].print();
-        rows[2].print();
-        rows[3].print();
+        for (int i = 0; i < regs.length; i++)
+          rows[i].print();
         System.out.println();
     }
 }
