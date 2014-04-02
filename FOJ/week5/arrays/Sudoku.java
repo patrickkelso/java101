@@ -53,11 +53,10 @@ public class Sudoku
      */
     public boolean isSolved()
     {
-//        for (int i = 0; i < regs.length; i++)
-//          return regs[i].isSolved() && rows[i].isSolved() && cols[i].isSolved();
-        return regs[0].isSolved() && regs[1].isSolved() && regs[2].isSolved() && regs[3].isSolved()
-            && rows[0].isSolved() && rows[1].isSolved() && rows[2].isSolved() && rows[3].isSolved()
-            && cols[0].isSolved() && cols[1].isSolved() && cols[2].isSolved() && cols[3].isSolved();
+        for (int i = 0; i < regs.length; i++)
+          if ( !regs[i].isSolved() || !rows[i].isSolved() || !cols[i].isSolved() )
+            return false;
+          return true;
     }
 
     public void print()
@@ -68,3 +67,6 @@ public class Sudoku
         System.out.println();
     }
 }
+//        return regs[0].isSolved() && regs[1].isSolved() && regs[2].isSolved() && regs[3].isSolved()
+//            && rows[0].isSolved() && rows[1].isSolved() && rows[2].isSolved() && rows[3].isSolved()
+//            && cols[0].isSolved() && cols[1].isSolved() && cols[2].isSolved() && cols[3].isSolved();
