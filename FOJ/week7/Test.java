@@ -1,13 +1,15 @@
 import java.util.*;
 
 public class Test {
-//  public static void main(String[] args) {
+  public static void main(String[] args) {
+    Test test = new Test();
+    test.printAreas();
 //    Rectangle r = new Rectangle(3, 2, 5, 6);
 //    r.show();
 //    Shape c = new Circle(5, 4, 5);
 //    c.show();
 //    System.out.println("Circle area is: " + c.getArea());
-//}
+}
     private ArrayList<Shape> shapes = new ArrayList<Shape>();
 
     public Test() {
@@ -21,6 +23,6 @@ public class Test {
   public void printAreas() {
     System.out.println("Calculating matrices");
     for (Shape shape : shapes)
-      shape.getArea();
+      System.out.println("Shape size is: " + shape.getArea());
       }
 }
