@@ -8,3 +8,64 @@
 
   Assignment:
     https://learn.it.uts.edu.au/JavaSC/Assignment.html
+
+public class Application
+{
+    private Inventory inventory;
+
+    public static void main(String[] args) {
+      create a new application.
+      application.start
+    }
+    public Application() {
+    }
+    public void start() {   // Starts everything, loops back to mainMenu
+    }
+    private void mainMenu() { // user selects using scanner managed with switch/case statements.
+    }
+
+*** Menu items ****
+    private void pointOfSale() {
+    }
+    private void inventoryControl() {
+    }
+    private void priceControl() {
+    }
+    private void endOfDay() {
+    }
+    private void exit() {
+    }
+/*** Menu items ****
+}
+
+    
+
+public class Inventory
+{
+    // One possibility for storing Product Lines
+    private ArrayList<ProductLine> products;
+
+    public void addProduct(ProductLine pl) {
+    }
+    public void sellProduct(String productCode, int no) {
+    }
+    public void increaseStock(String productCode, int no) {
+    }
+    public ProductLine getProduct(String productCode) {
+    }
+}
+
+    
+
+public class ProductLine
+{
+    private String productCode; // Format X9999
+    private double recRetPrice;
+    private double salePrice;
+    private int quantity;
+    private String description;
+
+    public void sell(int no) {
+    }
+}
+
