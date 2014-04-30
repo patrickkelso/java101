@@ -1,6 +1,7 @@
 public class Application
 {
     private Inventory inventory;
+    Scanner keyboard = new Scanner(System.in);
 
     public static void main(String[] args) {
     }
@@ -9,6 +10,7 @@ public class Application
     public void start() {
     }
     private void mainMenu() {
+      system.out.Println("*" * 80)
     }
     private void pointOfSale() {
     }
@@ -21,4 +23,3 @@ public class Application
     private void exit() {
     }
 }
-
