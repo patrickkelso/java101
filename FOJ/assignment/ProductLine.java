@@ -4,14 +4,12 @@ public class ProductLine
     private double recRetPrice;
     private double salePrice;
     private int quantity;
-    private String description;
 
-    public ProductLine(String productCode, double recRetPrice, double salePrice, int quantity, String description) {
+    public ProductLine(String productCode, double recRetPrice, double salePrice, int quantity) {
       this.productCode = productCode;
       this.recRetPrice = recRetPrice;
       this.salePrice = salePrice;
       this.quantity = quantity;
-      this.description = description;
     }
 
     public void setquantity(int num){
@@ -24,6 +22,10 @@ public class ProductLine
 
     public void setsalePrice(double num){
       salePrice = num;
+    }
+
+    public void setproductCode(String code){
+      productCode = code;
     }
 
     public void sell(int no) {

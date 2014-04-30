@@ -1,5 +1,9 @@
+import java.util.*;
 public class Inventory
 {
+  public Inventory() {
+    products = new ArrayList<ProductLine>();
+  }
     // One possibility for storing Product Lines
     private ArrayList<ProductLine> products;
 
@@ -10,6 +14,7 @@ public class Inventory
     public void increaseStock(String productCode, int no) {
     }
     public ProductLine getProduct(String productCode) {
+      return null ;
     }
 }
 
