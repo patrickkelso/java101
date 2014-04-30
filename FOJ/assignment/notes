@@ -1,0 +1,7 @@
+when you sell an item, decrement quantity by no.
+When you sell an itemised item, decrement as above and also remove the serial number from the list.
+
+
+This will be useful:
+Examples/arrays/PersonStuff.java:Person person = searchByName(people, name    );
+
