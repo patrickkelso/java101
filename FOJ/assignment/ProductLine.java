@@ -28,6 +28,10 @@ public class ProductLine
       productCode = code;
     }
 
+    public String getproductCode(){
+      return productCode;
+    }
+
     public void sell(int no) {
       setquantity(quantity - no);
     }

@@ -21,8 +21,15 @@ public class Inventory
   }
   public void increaseStock(String productCode, int no) {
   }
-  public ProductLine getProduct(String productCode) {
-    return null ;
+public ProductLine getProduct(String productCode){
+
+    for(ProductLine product: products){
+         if(product.getproductCode() == (productCode)){
+             return product;  
+         }
+    }
+
+    return null;
   }
 }
 

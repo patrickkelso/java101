@@ -34,6 +34,7 @@ public class Application {
       case "3": priceControl(); break;
       case "4": endOfDay(); break;
       case "X": exit(); break;
+      case "x": exit(); break;
         default: error(selection); break;
       }
         
@@ -47,7 +48,9 @@ public class Application {
       if (product == null)
         System.out.println("Invalid code");
       else
-        System.out.println("Sell Sell Sell"); // fix this later.
+        System.out.print("Enter quantity: ");
+        int enterquantity = keyboard.nextInt();
+        String blankspace = keyboard.nextLine();
     }
     private void inventoryControl() {
     }
