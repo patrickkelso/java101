@@ -35,5 +35,9 @@ public class ProductLine
     public void sell(int no) {
       setquantity(quantity - no);
     }
+
+    public String getProductCode() {
+      return productCode;
+    }
 }
 

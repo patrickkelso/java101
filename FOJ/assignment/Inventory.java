@@ -1,6 +1,16 @@
 import java.util.*;
 public class Inventory
 {
+  
+  // One possibility for storing Product Lines
+  private ArrayList<ProductLine> products;
+
+  public void addProduct(ProductLine pl) {
+  }
+  public void sellProduct(String productCode, int no) {
+  }
+  public void increaseStock(String productCode, int no) {
+  }
   public Inventory() {
     ArrayList<ProductLine> products = new ArrayList<ProductLine>();
     products.add(new ProductLine("A0001", 10.90, 9.90, 100));
@@ -12,21 +22,12 @@ public class Inventory
     products.add(new ItemisedProductLine("E0001", 699, 509, 3, "DDDD444444"));
     products.add(new ItemisedProductLine("E0001", 699, 509, 3, "AAAA222222"));
   }
-  // One possibility for storing Product Lines
-  private ArrayList<ProductLine> products;
-
-  public void addProduct(ProductLine pl) {
-  }
-  public void sellProduct(String productCode, int no) {
-  }
-  public void increaseStock(String productCode, int no) {
-  }
-public ProductLine getProduct(String productCode){
-
+  public ProductLine getProduct(ArrayList<ProductLine> products, String productCode){
+    String code2 = productCode;
     for(ProductLine product: products){
-         if(product.getproductCode() == (productCode)){
-             return product;  
-         }
+      if(product.getProductCode().equals(code2)){
+        return product;  
+      }
     }
 
     return null;
