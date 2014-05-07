@@ -7,7 +7,6 @@ public class Application {
 
     private Inventory inventory;
     private Scanner keyboard = new Scanner(System.in);
-    public static ArrayList<ProductLine> products;
 
     public Application() {
       inventory = new Inventory();

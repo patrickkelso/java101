@@ -19,16 +19,17 @@ public class Inventory
   }
 
   public static void pointOfSale() {
-    System.out.print("Enter product code: ");
-    String enteredcode = keyboard.nextLine();
+    String enteredcode = IO.readLine("Enter product code: ");
 
     ProductLine product = getProduct(enteredcode);
     if (product == null)
       System.out.println("Invalid code");
     else
       System.out.print("Enter quantity: ");
-    int enterquantity = keyboard.nextInt();
-    String blankspace = keyboard.nextLine();
+    int enterquantity = Integer.parseInt(IO.readLine("Enter the quantity: "));
+    double totalprice = product.getSalePrice() * enterquantity;
+    System.out.println("Total Price: " + totalprice);
+    
   }
 
   public static ProductLine getProduct(String enteredcode) {
