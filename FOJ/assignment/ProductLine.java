@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class ProductLine
 {
     private String productCode; // Format X9999
@@ -28,16 +30,25 @@ public class ProductLine
       productCode = code;
     }
 
-    public String getproductCode(){
+    public String getProductCode(){
       return productCode;
+    }
+
+    public double getSalePrice(){
+      return salePrice;
+    }
+
+    public double getRecRetPrice(){
+      return recRetPrice;
+    }
+
+    public int getQuantity(){
+      return quantity;
     }
 
     public void sell(int no) {
       setquantity(quantity - no);
     }
 
-    public String getProductCode() {
-      return productCode;
-    }
 }
 

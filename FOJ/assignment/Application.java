@@ -29,7 +29,7 @@ public class Application {
       System.out.print("Enter a choice: ");
       String selection = keyboard.nextLine();
       switch (selection) {
-      case "1": pointOfSale(); break;
+      case "1": Inventory.pointOfSale(); break;
       case "2": inventoryControl(); break;
       case "3": priceControl(); break;
       case "4": endOfDay(); break;
@@ -40,18 +40,18 @@ public class Application {
         
 
     }
-    private void pointOfSale() {
-      System.out.print("Enter product code: ");
-      String enteredcode = keyboard.nextLine();
-
-      ProductLine product = inventory.getProduct(enteredcode);
-      if (product == null)
-        System.out.println("Invalid code");
-      else
-        System.out.print("Enter quantity: ");
-        int enterquantity = keyboard.nextInt();
-        String blankspace = keyboard.nextLine();
-    }
+//    private void pointOfSale() {
+//      System.out.print("Enter product code: ");
+//      String enteredcode = keyboard.nextLine()////;
+//
+//      ProductLine product = Inventory.getProduct(ArrayList<ProductLine> products, enteredcode);
+//      if (product == null)
+//        System.out.println("Invalid code");
+//      else
+//        System.out.print("Enter quantity: ");
+//        int enterquantity = keyboard.nextInt();
+//        String blankspace = keyboard.nextLine();
+//    }
     private void inventoryControl() {
     }
     private void priceControl() {
