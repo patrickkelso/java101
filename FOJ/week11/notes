@@ -21,3 +21,6 @@ add a subclass of JFrame that way you can re-use the constructors for building W
 
 
 
+
+investigate creating interfaces and implementing.
+
