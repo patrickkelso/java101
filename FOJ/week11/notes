@@ -6,10 +6,18 @@ Component: size, preferredSize
     Panel: children[]  <== array
     Window: children[]  <== array
       Frame: children[]  <== array
+        JFrame:
+      JWindow: 
 
 JComponent: children[]  <== array
   JButton: children[]  <== array
   JTextField: children[]  <== array
   JLabel: children[]  <== array
   JPanel: children[]  <== array
+
+
+
+add a subclass of JFrame that way you can re-use the constructors for building Windows that match your specifications.
+
+
 
