@@ -20,7 +20,32 @@ JComponent: children[]  <== array
 add a subclass of JFrame that way you can re-use the constructors for building Windows that match your specifications.
 
 
+Events
+ActionEvent
+Interface ActionListener
+
+public interface ActionListener {
+  public void actionPerformed(ActionEvent event);
+}
+
+Anatomy of a button
+
+class JButton extends JComponent {
+  private String test;
+  private ArrayList<ActionListener> methodsToNotify (ActionListener described above)
+
+  public void addActionListener(ActionListener listener) {
+    listeners.add(listener);
+  }
+
+  public void click() {
+    show the animation of clicking.
+    loop through methodsToNotify {
+      Tell "I was clicked";
+    }
+  }
 
 
 investigate creating interfaces and implementing.
+
 
