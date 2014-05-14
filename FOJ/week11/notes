@@ -1,0 +1,15 @@
+Component: size, preferredSize
+  Button: labelText
+  TextField: text
+  Label: text
+  Container: children[]  <== array
+    Panel: children[]  <== array
+    Window: children[]  <== array
+      Frame: children[]  <== array
+
+JComponent: children[]  <== array
+  JButton: children[]  <== array
+  JTextField: children[]  <== array
+  JLabel: children[]  <== array
+  JPanel: children[]  <== array
+
