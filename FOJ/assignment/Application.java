@@ -43,6 +43,18 @@ public class Application {
     private void inventoryControl() {
     }
     private void priceControl() {
+    String enteredcode = IO.readLine("Enter product code: ");
+     ProductLine product = Inventory.getProduct(enteredcode);
+     while (product != null) {
+        System.out.println("Current RRP is: " + product.getRecRetPrice());
+        Double enterRRP = Double.parseDouble(IO.readLine("Enter the new recommended price: "));
+        System.out.println("Current sale price is: " + product.getSalePrice());
+        Double enterSale = Double.parseDouble(IO.readLine("Enter the new sale price: "));
+        product.setrecRetPrice(enterRRP);
+        product.setsalePrice(enterSale);
+        product = null;
+      }
+
     }
     private void endOfDay() {
     }

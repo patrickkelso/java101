@@ -6,5 +6,16 @@ public class PerishableProductLine extends ProductLine
       daysToExpiry = daysToExpiry;
     }
 
+    public int getDaysToExpiry() {
+      return daysToExpiry;
+    }
+
+    public void setDaysToExpiry(int days) {
+      daysToExpiry = days;
+    }
+
+    public void decrementExpiry() {
+      daysToExpiry--;
+    }
 
 }
