@@ -6,7 +6,7 @@ public class CalculatorWindow extends JFrame {
   public CalculatorWindow() {
     setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     numbersPanel = new NumbersPanel();
-    buttonsPanel = new ButtonsPanel();
+    buttonsPanel = new ButtonsPanel(numbersPanel);
 
     setLayout(new BorderLayout());
     add(numbersPanel, BorderLayout.CENTER);

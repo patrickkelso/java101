@@ -25,4 +25,14 @@ public class NumbersPanel extends JPanel {
     resultField = new JTextField(5);
     add(resultField);
   }
+
+  public double getNumber1() {
+   return Double.parseDouble(number1Field.getText());
+  }
+  public double getNumber2() {
+   return Double.parseDouble(number2Field.getText());
+  }
+  public void setResult(double result) {
+    resultField.setText(String.valueOf(result));
+  }
 }

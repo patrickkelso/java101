@@ -7,9 +7,11 @@ public class ButtonsPanel extends JPanel {
   private JButton subButton;
   private JButton mulButton;
   private JButton divButton;
+  private NumbersPanel numbersPanel;
 
-  public ButtonsPanel() {
+  public ButtonsPanel(NumbersPanel numbersPanel) {
     setLayout(new FlowLayout());
+    numbersPanel = numbersPanel;
 
     AddListener addListener = new AddListener();
     SubListener subListener = new SubListener();
@@ -32,7 +34,10 @@ public class ButtonsPanel extends JPanel {
 
   public class AddListener implements ActionListener {
     public void actionPerformed(ActionEvent event) {
-      System.out.println("Yay! Plus was clicked");
+      double number1 = numbersPanel.getNumber1();
+      double number2 = numbersPanel.getNumber2();
+      double result = number1 + number2;
+      numbersPanel.setResult(result);
     }
   }
   public class SubListener implements ActionListener {
