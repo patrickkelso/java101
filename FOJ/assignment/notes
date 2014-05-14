@@ -5,3 +5,7 @@ When you sell an itemised item, decrement as above and also remove the serial nu
 This will be useful:
 Examples/arrays/PersonStuff.java:Person person = searchByName(people, name    );
 
+product.sell(3); < should work regardless of type of product.
+ordinary product just subtract 3 from the stock.
+If it's itemised it should ask for serialNumbers.
+
