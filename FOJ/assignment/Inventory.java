@@ -5,6 +5,7 @@ public class Inventory
   // One possibility for storing Product Lines
   private static Scanner keyboard = new Scanner(System.in); 
   public static ArrayList<ProductLine> products;
+  private static int enterquantity;
 
   public Inventory() {
     products = new ArrayList<ProductLine>();
@@ -20,13 +21,11 @@ public class Inventory
 
   public static void pointOfSale() {
     String enteredcode = IO.readLine("Enter product code: ");
-
     ProductLine product = getProduct(enteredcode);
     if (product == null)
-      System.out.println("Invalid code");
+      System.out.println("Invalid code"); 
     else
-      System.out.print("Enter quantity: ");
-    int enterquantity = Integer.parseInt(IO.readLine("Enter the quantity: "));
+      enterquantity = Integer.parseInt(IO.readLine("Enter the quantity: "));
     double totalprice = product.getSalePrice() * enterquantity;
     System.out.println("Total Price: " + totalprice);
     
